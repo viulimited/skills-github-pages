@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Link</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+        }
+        h1 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .link-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+        .link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .link:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+        .link i {
+            margin-right: 10px;
+        }
+        @media (min-width: 600px) {
+            .link-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Daftar Link</h1>
+    <div class="link-container">
+        <a href="http://10.10.10.1" class="link"><i class="fas fa-network-wired"></i>Mikrotik</a>
+        <a href="http://192.168.12.1" class="link"><i class="fas fa-tv"></i>STB Garden</a>
+        <a href="http://192.168.12.154:8080" class="link"><i class="fas fa-video"></i>Shinobi</a>
+        <a href="http://192.168.8.1" class="link"><i class="fas fa-wifi"></i>Modem</a>
+        <a href="http://192.168.11.1/mikhmon" class="link"><i class="fas fa-server"></i>Mikhmon</a>
+        <a href="http://192.168.1.222:5000" class="link"><i class="fas fa-chart-bar"></i>Status</a>
+        <a href="http://192.168.1.37" class="link"><i class="fas fa-mobile-alt"></i>Xiaomi</a>
+        <a href="http://192.168.1.1" class="link"><i class="fas fa-globe"></i>ZTE</a>
+    </div>
+</div>
+
+</body>
+</html>
